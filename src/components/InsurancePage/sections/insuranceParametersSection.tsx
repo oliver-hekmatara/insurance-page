@@ -6,11 +6,11 @@ import { InsuranceParametersList } from 'components/InsuranceParametersList/Insu
 import styles from '../insurancePage.module.css';
 import Pill from 'components/Pill';
 
-interface InsuranceParametersProps {
+interface InsuranceParametersSectionProps {
   parameters: Parameter[];
 }
 
-export const InsuranceParametersSection = ({ parameters }: InsuranceParametersProps) => {
+export const InsuranceParametersSection = ({ parameters }: InsuranceParametersSectionProps) => {
   const formatMessage = useFormatMessage();
 
   const paramGroup1 = parameters.filter((param) => param.parameterGroupOrder === 1);

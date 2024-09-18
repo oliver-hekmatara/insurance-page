@@ -4,13 +4,17 @@ import { wash } from 'utils/insurance';
 import styles from '../insurancePage.module.css';
 import { useFormatMessage } from 'hooks/useFormatMessage';
 
-type Props = {
+interface InsuranceHeaderSectionProps {
   insuranceCompany: string;
   insuranceName: string;
   displayType: string;
-};
+}
 
-export const InsuranceHeaderSection = ({ insuranceName, insuranceCompany, displayType }: Props) => {
+export const InsuranceHeaderSection = ({
+  insuranceName,
+  insuranceCompany,
+  displayType,
+}: InsuranceHeaderSectionProps) => {
   const formatMessage = useFormatMessage();
 
   return (

@@ -8,11 +8,11 @@ import { DetailsList } from 'components/DetailsList/DetailsList';
 import { formatCompanyName } from 'utils/insurance';
 import { HeadlineFive } from '@insurely/ui';
 
-interface InsuranceDetailsProps {
+interface InsuranceDetailsSectionProps {
   insurance: Insurance;
 }
 
-export const InsuranceDetailsSection = ({ insurance }: InsuranceDetailsProps) => {
+export const InsuranceDetailsSection = ({ insurance }: InsuranceDetailsSectionProps) => {
   const { config } = useContext(UserContext);
 
   const formatMessage = useFormatMessage();

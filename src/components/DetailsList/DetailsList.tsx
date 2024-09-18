@@ -5,11 +5,11 @@ interface DetailItem {
   value: string | number | undefined;
 }
 
-interface Props {
+interface DetailsListProps {
   details: DetailItem[];
 }
 
-export const DetailsList = ({ details }: Props) => {
+export const DetailsList = ({ details }: DetailsListProps) => {
   return (
     <>
       {details.length ? (

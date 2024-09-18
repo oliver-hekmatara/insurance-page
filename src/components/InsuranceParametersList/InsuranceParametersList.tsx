@@ -2,11 +2,11 @@ import { IconCheckMark, IconClose, IconPlus } from '@insurely/ui';
 import { Parameter } from 'types/insurance';
 import styles from './insuranceParametersList.module.css';
 
-interface Props {
+interface InsuranceParametersListProps {
   parameters: Parameter[];
 }
 
-export const InsuranceParametersList = ({ parameters }: Props) => {
+export const InsuranceParametersList = ({ parameters }: InsuranceParametersListProps) => {
   return (
     <ul>
       {parameters.map((param, index) => (
