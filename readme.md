@@ -13,6 +13,7 @@ Good luck
 
 ## Building and running
 
+- npm install
 - npm run start
 
 ## The design
