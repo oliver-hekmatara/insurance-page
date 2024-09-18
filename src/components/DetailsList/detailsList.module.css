@@ -1,0 +1,11 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+  border-block-end: 1px solid #eee;
+}
+
+.detailValue {
+  font-weight: bold;
+}

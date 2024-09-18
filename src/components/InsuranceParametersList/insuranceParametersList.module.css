@@ -1,0 +1,14 @@
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+  border-block-end: 1px solid #eee;
+  font-size: 14px;
+}
+.listItemKey {
+  padding-inline-start: 10px;
+}
+.listItemValue {
+  margin-inline-start: auto;
+}
