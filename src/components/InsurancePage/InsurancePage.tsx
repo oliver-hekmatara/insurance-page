@@ -11,14 +11,14 @@ interface InsurancePageProps {
 }
 
 export const InsurancePage = ({ title, insurance }: InsurancePageProps) => {
-  const { insurance: insuranceData, parameters } = insurance;
+  const { insurance: insuranceData, parameters, displayType } = insurance;
 
   return (
     <Page title={title} goback>
       <InsuranceHeaderSection
         insuranceCompany={insuranceData.insuranceCompany || ''}
         insuranceName={insuranceData.insuranceName}
-        displayType={insurance.displayType}
+        displayType={displayType}
       />
 
       <div className={styles.insuranceSummary}>
