@@ -11,8 +11,7 @@ interface InsurancePageProps {
 }
 
 export const InsurancePage = ({ title, insurance }: InsurancePageProps) => {
-  const { insurance: insuranceData } = insurance;
-  const { parameters } = insurance;
+  const { insurance: insuranceData, parameters } = insurance;
 
   return (
     <Page title={title} goback>
